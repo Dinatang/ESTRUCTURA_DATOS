@@ -11,11 +11,9 @@ namespace FigurasGeometricas
         // Constructor para inicializar el radio del círculo
         public Circulo(double radio)
         {
-            // Validación del radio, asegurándose de que sea mayor que 0
+            // Validación para asegurarse de que el radio sea mayor que 0
             if (radio <= 0)
-                throw new ArgumentException("El radio debe ser mayor que 0"); 
-            
-            // Asignación del valor del radio
+                throw new ArgumentException("El radio debe ser mayor que 0"); // Si el radio es menor o igual a 0, lanza una excepción
             this.radio = radio;
         }
 
@@ -25,98 +23,85 @@ namespace FigurasGeometricas
             get { return radio; } // Devuelve el valor del radio
             set
             {
-                // Validación del valor del radio
                 if (value <= 0)
-                    throw new ArgumentException("El radio debe ser mayor que 0"); 
-                
+                    throw new ArgumentException("El radio debe ser mayor que 0"); // Valida si el nuevo valor es mayor que 0
                 radio = value; // Asigna el nuevo valor al radio
             }
         }
 
         // Método para calcular el área del círculo
+        // CalcularArea es una función que devuelve un valor double, se utiliza para calcular el área de un círculo,
+        // requiere como argumento el radio del círculo.
         public double CalcularArea()
         {
-            // Fórmula para calcular el área: π * r^2
-            return Math.PI * Math.Pow(radio, 2); 
+            // Fórmula para el área del círculo: π * r^2
+            return Math.PI * Math.Pow(radio, 2);
         }
 
         // Método para calcular el perímetro del círculo
+        // CalcularPerimetro es una función que devuelve un valor double, se utiliza para calcular el perímetro del círculo,
+        // requiere como argumento el radio del círculo.
         public double CalcularPerimetro()
         {
-            // Fórmula para calcular el perímetro: 2 * π * r
+            // Fórmula para el perímetro del círculo: 2 * π * r
             return 2 * Math.PI * radio;
         }
     }
 
-    // Clase que representa un rectángulo
-    public class Rectangulo
+    // Clase que representa un cuadrado
+    public class Cuadrado
     {
-        // Campos privados para almacenar las dimensiones del rectángulo
-        private double largo;
-        private double ancho;
+        // Campo privado para almacenar el lado del cuadrado
+        private double lado;
 
-        // Constructor para inicializar el largo y el ancho del rectángulo
-        public Rectangulo(double largo, double ancho)
+        // Constructor para inicializar el lado del cuadrado
+        public Cuadrado(double lado)
         {
-            // Validación de las dimensiones, asegurándose de que sean mayores que 0
-            if (largo <= 0 || ancho <= 0)
-                throw new ArgumentException("El largo y el ancho deben ser mayores que 0"); 
-            
-            // Asignación de los valores del largo y ancho
-            this.largo = largo;
-            this.ancho = ancho;
+            // Validación para asegurarse de que el lado sea mayor que 0
+            if (lado <= 0)
+                throw new ArgumentException("El lado debe ser mayor que 0"); // Si el lado es menor o igual a 0, lanza una excepción
+            this.lado = lado;
         }
 
-        // Propiedad para obtener y establecer el valor del largo
-        public double Largo
+        // Propiedad para obtener y establecer el valor del lado
+        public double Lado
         {
-            get { return largo; } // Devuelve el valor del largo
+            get { return lado; } // Devuelve el valor del lado
             set
             {
-                // Validación del valor del largo
                 if (value <= 0)
-                    throw new ArgumentException("El largo debe ser mayor que 0"); 
-                
-                largo = value; // Asigna el nuevo valor al largo
+                    throw new ArgumentException("El lado debe ser mayor que 0"); // Valida si el nuevo valor es mayor que 0
+                lado = value; // Asigna el nuevo valor al lado
             }
         }
 
-        // Propiedad para obtener y establecer el valor del ancho
-        public double Ancho
-        {
-            get { return ancho; } // Devuelve el valor del ancho
-            set
-            {
-                // Validación del valor del ancho
-                if (value <= 0)
-                    throw new ArgumentException("El ancho debe ser mayor que 0"); 
-                
-                ancho = value; // Asigna el nuevo valor al ancho
-            }
-        }
-
-        // Método para calcular el área del rectángulo
+        // Método para calcular el área del cuadrado
+        // CalcularArea es una función que devuelve un valor double, se utiliza para calcular el área de un cuadrado,
+        // requiere como argumento el lado del cuadrado.
         public double CalcularArea()
         {
-            // Fórmula para calcular el área: largo * ancho
-            return largo * ancho; 
+            // Fórmula para el área del cuadrado: lado * lado
+            return lado * lado;
         }
 
-        // Método para calcular el perímetro del rectángulo
+        // Método para calcular el perímetro del cuadrado
+        // CalcularPerimetro es una función que devuelve un valor double, se utiliza para calcular el perímetro del cuadrado,
+        // requiere como argumento el lado del cuadrado.
         public double CalcularPerimetro()
         {
-            // Fórmula para calcular el perímetro: 2 * (largo + ancho)
-            return 2 * (largo + ancho); 
+            // Fórmula para el perímetro del cuadrado: 4 * lado
+            return 4 * lado;
         }
     }
 
+    // Clase principal para ejecutar el código
     class Program
     {
         static void Main(string[] args)
         {
             // Solicitamos al usuario que ingrese el radio del círculo
             Console.Write("Ingrese el radio del círculo: ");
-            double radio = Convert.ToDouble(Console.ReadLine()); // Leemos el valor y lo convertimos a double
+            double radio = Convert.ToDouble(Console.ReadLine()); // Leemos el radio y lo convertimos a double
 
             // Creamos un objeto de la clase Circulo con el radio ingresado
             Circulo circulo = new Circulo(radio);
@@ -125,19 +110,17 @@ namespace FigurasGeometricas
             Console.WriteLine($"Área del círculo: {circulo.CalcularArea()}");
             Console.WriteLine($"Perímetro del círculo: {circulo.CalcularPerimetro()}");
 
-            // Solicitamos al usuario que ingrese las dimensiones del rectángulo
-            Console.Write("Ingrese el largo del rectángulo: ");
-            double largo = Convert.ToDouble(Console.ReadLine()); // Leemos el largo y lo convertimos a double
+            // Solicitamos al usuario que ingrese el lado del cuadrado
+            Console.Write("Ingrese el lado del cuadrado: ");
+            double lado = Convert.ToDouble(Console.ReadLine()); // Leemos el lado y lo convertimos a double
 
-            Console.Write("Ingrese el ancho del rectángulo: ");
-            double ancho = Convert.ToDouble(Console.ReadLine()); // Leemos el ancho y lo convertimos a double
+            // Creamos un objeto de la clase Cuadrado con el lado ingresado
+            Cuadrado cuadrado = new Cuadrado(lado);
 
-            // Creamos un objeto de la clase Rectangulo con el largo y ancho ingresados
-            Rectangulo rectangulo = new Rectangulo(largo, ancho);
-
-            // Mostramos el área y el perímetro del rectángulo
-            Console.WriteLine($"Área del rectángulo: {rectangulo.CalcularArea()}");
-            Console.WriteLine($"Perímetro del rectángulo: {rectangulo.CalcularPerimetro()}");
+            // Mostramos el área y el perímetro del cuadrado
+            Console.WriteLine($"Área del cuadrado: {cuadrado.CalcularArea()}");
+            Console.WriteLine($"Perímetro del cuadrado: {cuadrado.CalcularPerimetro()}");
         }
     }
 }
+
