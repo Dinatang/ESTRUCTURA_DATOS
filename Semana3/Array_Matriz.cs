@@ -1,6 +1,6 @@
 ﻿using System;
 
-// Clase Producto del programa
+// Clase Producto
 public class Producto
 {
     // Propiedades de la clase
