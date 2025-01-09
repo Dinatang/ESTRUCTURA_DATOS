@@ -1,0 +1,15 @@
+C:\ESTRUCTURA_DATOS\Semana4\SEMANA 5\bin\Debug\net9.0\SEMANA 5.exe
+C:\ESTRUCTURA_DATOS\Semana4\SEMANA 5\bin\Debug\net9.0\SEMANA 5.deps.json
+C:\ESTRUCTURA_DATOS\Semana4\SEMANA 5\bin\Debug\net9.0\SEMANA 5.runtimeconfig.json
+C:\ESTRUCTURA_DATOS\Semana4\SEMANA 5\bin\Debug\net9.0\SEMANA 5.dll
+C:\ESTRUCTURA_DATOS\Semana4\SEMANA 5\bin\Debug\net9.0\SEMANA 5.pdb
+C:\ESTRUCTURA_DATOS\Semana4\SEMANA 5\obj\Debug\net9.0\SEMANA 5.GeneratedMSBuildEditorConfig.editorconfig
+C:\ESTRUCTURA_DATOS\Semana4\SEMANA 5\obj\Debug\net9.0\SEMANA 5.AssemblyInfoInputs.cache
+C:\ESTRUCTURA_DATOS\Semana4\SEMANA 5\obj\Debug\net9.0\SEMANA 5.AssemblyInfo.cs
+C:\ESTRUCTURA_DATOS\Semana4\SEMANA 5\obj\Debug\net9.0\SEMANA 5.csproj.CoreCompileInputs.cache
+C:\ESTRUCTURA_DATOS\Semana4\SEMANA 5\obj\Debug\net9.0\SEMANA 5.sourcelink.json
+C:\ESTRUCTURA_DATOS\Semana4\SEMANA 5\obj\Debug\net9.0\SEMANA 5.dll
+C:\ESTRUCTURA_DATOS\Semana4\SEMANA 5\obj\Debug\net9.0\refint\SEMANA 5.dll
+C:\ESTRUCTURA_DATOS\Semana4\SEMANA 5\obj\Debug\net9.0\SEMANA 5.pdb
+C:\ESTRUCTURA_DATOS\Semana4\SEMANA 5\obj\Debug\net9.0\SEMANA 5.genruntimeconfig.cache
+C:\ESTRUCTURA_DATOS\Semana4\SEMANA 5\obj\Debug\net9.0\ref\SEMANA 5.dll

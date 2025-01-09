@@ -64,7 +64,7 @@ public class Agenda
 }
 
 // Clase principal para pruebas
-public class Program
+public class Ejercicio2
 {
     public static void Main()
     {
