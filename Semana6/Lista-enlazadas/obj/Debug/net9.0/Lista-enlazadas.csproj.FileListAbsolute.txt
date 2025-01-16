@@ -1,0 +1,15 @@
+C:\ESTRUCTURA_DATOS\Semana6\Lista-enlazadas\bin\Debug\net9.0\Lista-enlazadas.exe
+C:\ESTRUCTURA_DATOS\Semana6\Lista-enlazadas\bin\Debug\net9.0\Lista-enlazadas.deps.json
+C:\ESTRUCTURA_DATOS\Semana6\Lista-enlazadas\bin\Debug\net9.0\Lista-enlazadas.runtimeconfig.json
+C:\ESTRUCTURA_DATOS\Semana6\Lista-enlazadas\bin\Debug\net9.0\Lista-enlazadas.dll
+C:\ESTRUCTURA_DATOS\Semana6\Lista-enlazadas\bin\Debug\net9.0\Lista-enlazadas.pdb
+C:\ESTRUCTURA_DATOS\Semana6\Lista-enlazadas\obj\Debug\net9.0\Lista-enlazadas.GeneratedMSBuildEditorConfig.editorconfig
+C:\ESTRUCTURA_DATOS\Semana6\Lista-enlazadas\obj\Debug\net9.0\Lista-enlazadas.AssemblyInfoInputs.cache
+C:\ESTRUCTURA_DATOS\Semana6\Lista-enlazadas\obj\Debug\net9.0\Lista-enlazadas.AssemblyInfo.cs
+C:\ESTRUCTURA_DATOS\Semana6\Lista-enlazadas\obj\Debug\net9.0\Lista-enlazadas.csproj.CoreCompileInputs.cache
+C:\ESTRUCTURA_DATOS\Semana6\Lista-enlazadas\obj\Debug\net9.0\Lista-enlazadas.sourcelink.json
+C:\ESTRUCTURA_DATOS\Semana6\Lista-enlazadas\obj\Debug\net9.0\Lista-enlazadas.dll
+C:\ESTRUCTURA_DATOS\Semana6\Lista-enlazadas\obj\Debug\net9.0\refint\Lista-enlazadas.dll
+C:\ESTRUCTURA_DATOS\Semana6\Lista-enlazadas\obj\Debug\net9.0\Lista-enlazadas.pdb
+C:\ESTRUCTURA_DATOS\Semana6\Lista-enlazadas\obj\Debug\net9.0\Lista-enlazadas.genruntimeconfig.cache
+C:\ESTRUCTURA_DATOS\Semana6\Lista-enlazadas\obj\Debug\net9.0\ref\Lista-enlazadas.dll
