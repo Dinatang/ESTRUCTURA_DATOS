@@ -1,45 +1,64 @@
-﻿using System;
-using System.Collections.Generic;
+﻿//Torres.run ();
 
-public class TorresDeHanoi
+class TorresDeHanoi
 {
-    // Método recursivo que resuelve el problema de las Torres de Hanoi
-    public static void ResolverTorres(int numDiscos, Stack<int> origen, Stack<int> destino, Stack<int> auxiliar)
+    static void Main()
     {
-        // Caso base: Si solo hay un disco, lo movemos directamente a la torre destino
-        if (numDiscos == 1)
+        // Número de discos
+        int n = 3;
+
+        // Crear las tres torres como pilas
+        Stack<int> torreA = new Stack<int>();
+        Stack<int> torreB = new Stack<int>();
+        Stack<int> torreC = new Stack<int>();
+
+        // Inicializamos la torre A con los discos (de mayor a menor)
+        for (int i = n; i >= 1; i--)
         {
-            destino.Push(origen.Pop());  // Mover el disco de la torre origen a la torre destino
-            Console.WriteLine("Mover disco de {0} a {1}", origen.Peek(), destino.Peek());  // Imprimir el movimiento
-            return;
+            torreA.Push(i);
         }
 
-        // Recursión: Primero mover los n-1 discos a la torre auxiliar
-        ResolverTorres(numDiscos - 1, origen, auxiliar, destino);  
-        
-        // Mover el disco restante de la torre origen a la torre destino
-        destino.Push(origen.Pop());  
-        Console.WriteLine("Mover disco de {0} a {1}", origen.Peek(), destino.Peek());  // Imprimir el movimiento
+        // Mostrar el estado inicial de las torres
+        MostrarTorre("A", torreA);
+        MostrarTorre("B", torreB);
+        MostrarTorre("C", torreC);
 
-        // Mover los n-1 discos de la torre auxiliar a la torre destino
-        ResolverTorres(numDiscos - 1, auxiliar, destino, origen);  
+        // Realizamos las movidas (con solo 3 discos)
+        MoverDiscos(n, torreA, torreC, torreB);
+
+        // Mostrar el estado final
+        Console.WriteLine("\nEstado final:");
+        MostrarTorre("A", torreA);
+        MostrarTorre("B", torreB);
+        MostrarTorre("C", torreC);
     }
 
-    // Método principal que ejecuta el programa
-    public static void Main()
+    // Función para mover los discos entre las torres
+    static void MoverDiscos(int n, Stack<int> origen, Stack<int> destino, Stack<int> auxiliar)
     {
-        int numDiscos = 3;  // Número de discos
-        Stack<int> torreA = new Stack<int>();  // Torre origen
-        Stack<int> torreB = new Stack<int>();  // Torre auxiliar
-        Stack<int> torreC = new Stack<int>();  // Torre destino
-
-        // Llenar la torre de origen con discos (el disco más grande tiene el valor más bajo)
-        for (int i = numDiscos; i >= 1; i--)
+        // Si solo hay un disco, lo movemos directamente
+        if (n == 1)
         {
-            torreA.Push(i);  // Agregar discos a la torre origen
+            destino.Push(origen.Pop());
+            Console.WriteLine("Mover disco de A a C");
         }
+        else
+        {
+            // Mover los n-1 discos a la torre auxiliar
+            MoverDiscos(n - 1, origen, auxiliar, destino);
 
-        Console.WriteLine("Comienza el movimiento de discos:");
-        ResolverTorres(numDiscos, torreA, torreC, torreB);  // Llamada al método para resolver el problema
+            // Mover el disco más grande a la torre destino
+            destino.Push(origen.Pop());
+            Console.WriteLine("Mover disco de A a C");
+
+            // Mover los n-1 discos de la torre auxiliar a la torre destino
+            MoverDiscos(n - 1, auxiliar, destino, origen);
+        }
+    }
+
+    // Función para mostrar el estado de las torres
+    static void MostrarTorre(string nombre, Stack<int> torre)
+    {
+        Console.WriteLine($"{nombre}: " + string.Join(", ", torre));
     }
 }
