@@ -1,0 +1,15 @@
+C:\ESTRUCTURA_DATOS\Semana7\Pila\obj\Debug\net9.0\Pila.GeneratedMSBuildEditorConfig.editorconfig
+C:\ESTRUCTURA_DATOS\Semana7\Pila\obj\Debug\net9.0\Pila.AssemblyInfoInputs.cache
+C:\ESTRUCTURA_DATOS\Semana7\Pila\obj\Debug\net9.0\Pila.AssemblyInfo.cs
+C:\ESTRUCTURA_DATOS\Semana7\Pila\obj\Debug\net9.0\Pila.csproj.CoreCompileInputs.cache
+C:\ESTRUCTURA_DATOS\Semana7\Pila\obj\Debug\net9.0\Pila.sourcelink.json
+C:\ESTRUCTURA_DATOS\Semana7\Pila\bin\Debug\net9.0\Pila.exe
+C:\ESTRUCTURA_DATOS\Semana7\Pila\bin\Debug\net9.0\Pila.deps.json
+C:\ESTRUCTURA_DATOS\Semana7\Pila\bin\Debug\net9.0\Pila.runtimeconfig.json
+C:\ESTRUCTURA_DATOS\Semana7\Pila\bin\Debug\net9.0\Pila.dll
+C:\ESTRUCTURA_DATOS\Semana7\Pila\bin\Debug\net9.0\Pila.pdb
+C:\ESTRUCTURA_DATOS\Semana7\Pila\obj\Debug\net9.0\Pila.dll
+C:\ESTRUCTURA_DATOS\Semana7\Pila\obj\Debug\net9.0\refint\Pila.dll
+C:\ESTRUCTURA_DATOS\Semana7\Pila\obj\Debug\net9.0\Pila.pdb
+C:\ESTRUCTURA_DATOS\Semana7\Pila\obj\Debug\net9.0\Pila.genruntimeconfig.cache
+C:\ESTRUCTURA_DATOS\Semana7\Pila\obj\Debug\net9.0\ref\Pila.dll
