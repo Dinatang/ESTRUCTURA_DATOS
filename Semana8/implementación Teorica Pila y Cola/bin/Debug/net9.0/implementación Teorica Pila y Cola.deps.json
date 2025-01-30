@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "implementación Teorica Pila y Cola/1.0.0": {
+        "runtime": {
+          "implementación Teorica Pila y Cola.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "implementación Teorica Pila y Cola/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

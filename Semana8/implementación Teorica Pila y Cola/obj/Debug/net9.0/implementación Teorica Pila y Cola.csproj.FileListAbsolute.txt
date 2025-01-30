@@ -1,0 +1,15 @@
+C:\ESTRUCTURA_DATOS\Semana8\implementación Teorica Pila y Cola\bin\Debug\net9.0\implementación Teorica Pila y Cola.exe
+C:\ESTRUCTURA_DATOS\Semana8\implementación Teorica Pila y Cola\bin\Debug\net9.0\implementación Teorica Pila y Cola.deps.json
+C:\ESTRUCTURA_DATOS\Semana8\implementación Teorica Pila y Cola\bin\Debug\net9.0\implementación Teorica Pila y Cola.runtimeconfig.json
+C:\ESTRUCTURA_DATOS\Semana8\implementación Teorica Pila y Cola\bin\Debug\net9.0\implementación Teorica Pila y Cola.dll
+C:\ESTRUCTURA_DATOS\Semana8\implementación Teorica Pila y Cola\bin\Debug\net9.0\implementación Teorica Pila y Cola.pdb
+C:\ESTRUCTURA_DATOS\Semana8\implementación Teorica Pila y Cola\obj\Debug\net9.0\implementación Teorica Pila y Cola.GeneratedMSBuildEditorConfig.editorconfig
+C:\ESTRUCTURA_DATOS\Semana8\implementación Teorica Pila y Cola\obj\Debug\net9.0\implementación Teorica Pila y Cola.AssemblyInfoInputs.cache
+C:\ESTRUCTURA_DATOS\Semana8\implementación Teorica Pila y Cola\obj\Debug\net9.0\implementación Teorica Pila y Cola.AssemblyInfo.cs
+C:\ESTRUCTURA_DATOS\Semana8\implementación Teorica Pila y Cola\obj\Debug\net9.0\implementación Teorica Pila y Cola.csproj.CoreCompileInputs.cache
+C:\ESTRUCTURA_DATOS\Semana8\implementación Teorica Pila y Cola\obj\Debug\net9.0\implementación Teorica Pila y Cola.sourcelink.json
+C:\ESTRUCTURA_DATOS\Semana8\implementación Teorica Pila y Cola\obj\Debug\net9.0\implementación Teorica Pila y Cola.dll
+C:\ESTRUCTURA_DATOS\Semana8\implementación Teorica Pila y Cola\obj\Debug\net9.0\refint\implementación Teorica Pila y Cola.dll
+C:\ESTRUCTURA_DATOS\Semana8\implementación Teorica Pila y Cola\obj\Debug\net9.0\implementación Teorica Pila y Cola.pdb
+C:\ESTRUCTURA_DATOS\Semana8\implementación Teorica Pila y Cola\obj\Debug\net9.0\implementación Teorica Pila y Cola.genruntimeconfig.cache
+C:\ESTRUCTURA_DATOS\Semana8\implementación Teorica Pila y Cola\obj\Debug\net9.0\ref\implementación Teorica Pila y Cola.dll
