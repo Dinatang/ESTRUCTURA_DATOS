@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.5.002.0
+VisualStudioVersion = 17.5.2.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Semana2", "Semana2\Semana2.csproj", "{C10C34E3-7D30-4912-B223-75D0260F0067}"
 EndProject
@@ -105,9 +105,6 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {4D93C081-F85E-4FE4-A42B-B6549101C3CB}
-	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{68ED09E3-B427-45DC-9991-751AA70086A1} = {8473527D-88A5-4EEE-B5CF-924BA8D9F41A}
 		{C4CE0F79-57F6-4FFF-B780-2C6BC66F53C4} = {8473527D-88A5-4EEE-B5CF-924BA8D9F41A}
@@ -121,5 +118,8 @@ Global
 		{602E4C65-6EF8-48C4-8067-07171F0E6610} = {7E5CE29B-5E48-4C55-8EE2-2D92EF82DD74}
 		{97FBFBA9-BE06-46F0-AE21-C34B202D9AA0} = {A5E5D481-D528-4400-803A-4AAE02CA21B3}
 		{9BF24B27-8EA0-41C3-9D6F-8C038A2FA632} = {A5E5D481-D528-4400-803A-4AAE02CA21B3}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4D93C081-F85E-4FE4-A42B-B6549101C3CB}
 	EndGlobalSection
 EndGlobal
