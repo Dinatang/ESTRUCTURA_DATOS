@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("implementación Teorica Pila y Cola")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+96d0634cb945921269dcd086c5ceff4140c400d7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+039ea3588cfe04f9fa4101481e1b9d6bb03773c0")]
 [assembly: System.Reflection.AssemblyProductAttribute("implementación Teorica Pila y Cola")]
 [assembly: System.Reflection.AssemblyTitleAttribute("implementación Teorica Pila y Cola")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
