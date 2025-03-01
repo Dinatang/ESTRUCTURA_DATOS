@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "implementación Teorica Pil
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Semana10", "Semana10\Semana10.csproj", "{D9204C2B-E9A7-4085-B347-35CF40961FB2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Semana11", "Semana11\Semana11.csproj", "{CF48C95E-8073-4455-93F1-1DE410C7D411}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -107,6 +109,10 @@ Global
 		{D9204C2B-E9A7-4085-B347-35CF40961FB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9204C2B-E9A7-4085-B347-35CF40961FB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9204C2B-E9A7-4085-B347-35CF40961FB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF48C95E-8073-4455-93F1-1DE410C7D411}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF48C95E-8073-4455-93F1-1DE410C7D411}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF48C95E-8073-4455-93F1-1DE410C7D411}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF48C95E-8073-4455-93F1-1DE410C7D411}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
