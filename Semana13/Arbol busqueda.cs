@@ -1,12 +1,99 @@
 ﻿using System;
-using System.Collections.Generic;
+
+class Nodo
+{
+    public string Titulo;
+    public Nodo Izquierda, Derecha;
+
+    public Nodo(string titulo)
+    {
+        Titulo = titulo;
+        Izquierda = null;
+        Derecha = null;
+    }
+}
+
+class ArbolBinarioBusqueda
+{
+    private Nodo raiz;
+
+    public ArbolBinarioBusqueda()
+    {
+        raiz = null;
+    }
+
+    // Método para insertar un título en el árbol
+    public void Insertar(string titulo)
+    {
+        raiz = InsertarRecursivo(raiz, titulo);
+    }
+
+    // Método recursivo para insertar un título
+    private Nodo InsertarRecursivo(Nodo raiz, string titulo)
+    {
+        if (raiz == null)
+        {
+            raiz = new Nodo(titulo);
+            return raiz;
+        }
+
+        if (string.Compare(titulo, raiz.Titulo) < 0) // Titulo menor, va a la izquierda
+            raiz.Izquierda = InsertarRecursivo(raiz.Izquierda, titulo);
+        else if (string.Compare(titulo, raiz.Titulo) > 0) // Titulo mayor, va a la derecha
+            raiz.Derecha = InsertarRecursivo(raiz.Derecha, titulo);
+
+        return raiz;
+    }
+
+    // Método para buscar un título de manera recursiva
+    public bool BuscarRecursiva(string titulo)
+    {
+        return BuscarRecursivo(raiz, titulo);
+    }
+
+    // Método recursivo para buscar un título
+    private bool BuscarRecursivo(Nodo raiz, string titulo)
+    {
+        if (raiz == null) // Caso base: no se encuentra el título
+            return false;
+
+        if (string.Compare(titulo, raiz.Titulo) == 0) // Titulo encontrado
+            return true;
+
+        if (string.Compare(titulo, raiz.Titulo) < 0) // Buscar en la izquierda
+            return BuscarRecursivo(raiz.Izquierda, titulo);
+
+        return BuscarRecursivo(raiz.Derecha, titulo); // Buscar en la derecha
+    }
+
+    // Método para buscar un título de manera iterativa
+    public bool BuscarIterativa(string titulo)
+    {
+        Nodo current = raiz;
+
+        while (current != null)
+        {
+            if (string.Compare(titulo, current.Titulo) == 0) // Titulo encontrado
+                return true;
+            else if (string.Compare(titulo, current.Titulo) < 0) // Buscar en la izquierda
+                current = current.Izquierda;
+            else // Buscar en la derecha
+                current = current.Derecha;
+        }
+
+        return false; // Si no se encontró el título
+    }
+}
 
 class Program
 {
     static void Main()
     {
-        // 1. Crear un catálogo de revistas
-        List<string> catalogo = new List<string>()
+        // Crear un árbol binario de búsqueda
+        ArbolBinarioBusqueda arbol = new ArbolBinarioBusqueda();
+
+        // Insertar 10 títulos al árbol
+        string[] titulos = new string[]
         {
             "National Geographic",
             "Scientific American",
@@ -20,36 +107,35 @@ class Program
             "The New Yorker"
         };
 
-        // 2. Mostrar los títulos en el catálogo
-        Console.WriteLine("Catálogo de revistas:");
-        foreach (var revista in catalogo)
+        foreach (var titulo in titulos)
         {
-            Console.WriteLine(revista);
+            arbol.Insertar(titulo);
         }
 
-        // 3. Mostrar el menú de opciones
+        // Menú de opciones
         Console.WriteLine("\nMenú:");
-        Console.WriteLine("1. Búsqueda iterativa");
-        Console.WriteLine("2. Búsqueda recursiva");
+        Console.WriteLine("1. Búsqueda recursiva");
+        Console.WriteLine("2. Búsqueda iterativa");
         Console.Write("Elija una opción (1 o 2): ");
         int opcion = int.Parse(Console.ReadLine());
 
+        // Leer el título a buscar
         Console.Write("Ingrese el título a buscar: ");
         string tituloBuscar = Console.ReadLine();
 
-        // 4. Realizar la búsqueda según la opción seleccionada
+        // Realizar la búsqueda según la opción seleccionada
         if (opcion == 1)
         {
-            // Búsqueda iterativa
-            if (BusquedaIterativa(catalogo, tituloBuscar))
+            // Búsqueda recursiva
+            if (arbol.BuscarRecursiva(tituloBuscar))
                 Console.WriteLine("Título encontrado.");
             else
                 Console.WriteLine("Título no encontrado.");
         }
         else if (opcion == 2)
         {
-            // Búsqueda recursiva
-            if (BusquedaRecursiva(catalogo, tituloBuscar, 0))
+            // Búsqueda iterativa
+            if (arbol.BuscarIterativa(tituloBuscar))
                 Console.WriteLine("Título encontrado.");
             else
                 Console.WriteLine("Título no encontrado.");
@@ -58,29 +144,5 @@ class Program
         {
             Console.WriteLine("Opción no válida.");
         }
-    }
-
-    // Método de búsqueda iterativa
-    static bool BusquedaIterativa(List<string> catalogo, string tituloBuscar)
-    {
-        foreach (var titulo in catalogo)
-        {
-            if (titulo.Equals(tituloBuscar, StringComparison.OrdinalIgnoreCase))
-                return true;
-        }
-        return false;
-    }
-
-    // Método de búsqueda recursiva
-    static bool BusquedaRecursiva(List<string> catalogo, string tituloBuscar, int index)
-    {
-        if (index >= catalogo.Count) // Caso base: hemos recorrido toda la lista
-            return false;
-
-        if (catalogo[index].Equals(tituloBuscar, StringComparison.OrdinalIgnoreCase)) // Si encontramos el título
-            return true;
-
-        // Llamada recursiva con el siguiente índice
-        return BusquedaRecursiva(catalogo, tituloBuscar, index + 1);
     }
 }
