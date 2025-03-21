@@ -91,6 +91,42 @@ class ArbolBinario
         }
     }
 
+    // Método público para realizar un recorrido en preorden del árbol (raíz, izquierda, derecha)
+    public void RecorridoPreorden()
+    {
+        RecorridoPreordenRecursivo(raiz);  // Llama al método recursivo para recorrer el árbol
+        Console.WriteLine();  // Imprime un salto de línea después del recorrido
+    }
+
+    // Método recursivo para realizar un recorrido en preorden
+    private void RecorridoPreordenRecursivo(Nodo nodo)
+    {
+        if (nodo != null)  // Si el nodo no es nulo, continuamos con el recorrido
+        {
+            Console.Write(nodo.valor + " ");  // Primero imprimimos el valor del nodo
+            RecorridoPreordenRecursivo(nodo.izquierdo);  // Luego recorremos el subárbol izquierdo
+            RecorridoPreordenRecursivo(nodo.derecho);  // Finalmente, recorremos el subárbol derecho
+        }
+    }
+
+    // Método público para realizar un recorrido en postorden del árbol (izquierda, derecha, raíz)
+    public void RecorridoPostorden()
+    {
+        RecorridoPostordenRecursivo(raiz);  // Llama al método recursivo para recorrer el árbol
+        Console.WriteLine();  // Imprime un salto de línea después del recorrido
+    }
+
+    // Método recursivo para realizar un recorrido en postorden
+    private void RecorridoPostordenRecursivo(Nodo nodo)
+    {
+        if (nodo != null)  // Si el nodo no es nulo, continuamos con el recorrido
+        {
+            RecorridoPostordenRecursivo(nodo.izquierdo);  // Primero recorremos el subárbol izquierdo
+            RecorridoPostordenRecursivo(nodo.derecho);  // Luego recorremos el subárbol derecho
+            Console.Write(nodo.valor + " ");  // Finalmente, imprimimos el valor del nodo
+        }
+    }
+
     // Método público para eliminar un valor en el árbol
     public void Eliminar(string valor)
     {
@@ -145,7 +181,9 @@ class Program
             Console.WriteLine("2. Buscar");
             Console.WriteLine("3. Eliminar");
             Console.WriteLine("4. Recorrido Inorden");
-            Console.WriteLine("5. Salir");
+            Console.WriteLine("5. Recorrido Preorden");
+            Console.WriteLine("6. Recorrido Postorden");
+            Console.WriteLine("7. Salir");
             Console.Write("Seleccione una opción: ");
             opcion = int.Parse(Console.ReadLine());  // Lee la opción seleccionada por el usuario
 
@@ -178,6 +216,16 @@ class Program
                     arbol.RecorridoInorden();  // Llama al método para el recorrido inorden
                     break;
                 case 5:
+                    // Opción para mostrar el recorrido preorden
+                    Console.WriteLine("Recorrido Preorden:");
+                    arbol.RecorridoPreorden();  // Llama al método para el recorrido preorden
+                    break;
+                case 6:
+                    // Opción para mostrar el recorrido postorden
+                    Console.WriteLine("Recorrido Postorden:");
+                    arbol.RecorridoPostorden();  // Llama al método para el recorrido postorden
+                    break;
+                case 7:
                     // Opción para salir del programa
                     Console.WriteLine("Saliendo...");
                     break;
@@ -189,6 +237,6 @@ class Program
             Console.WriteLine("Presione una tecla para continuar...");
             Console.ReadKey();  // Espera que el usuario presione una tecla para continuar
 
-        } while (opcion != 5);  // El programa sigue ejecutándose hasta que el usuario seleccione la opción 5 (salir)
+        } while (opcion != 7);  // El programa sigue ejecutándose hasta que el usuario seleccione la opción 7 (salir)
     }
 }
