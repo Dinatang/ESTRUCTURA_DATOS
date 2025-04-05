@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
+﻿
 public class Grafo  // Hacemos la clase 'Grafo' pública para que sea accesible fuera del ensamblado
 {
     private Dictionary<int, List<int>> adjList;
